@@ -1,13 +1,13 @@
 ﻿using System;
+using Application.Contracts;
+using static System.Net.Mime.MediaTypeNames;
+
 namespace Infrastructure.Mail
 {
-	public class Mail
-	{
-		public Mail()
-		{
-		}
+	public class Mail : IMail
+    {
 
-        public void sendMail(Mail mail)
+        public void sendMail(object mail)
         {
             Console.WriteLine("sending mail ...");
         }

@@ -1,0 +1,12 @@
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/bin/Debug/net6.0/Domain.deps.json
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/bin/Debug/net6.0/Domain.dll
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/bin/Debug/net6.0/Domain.pdb
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/obj/Debug/net6.0/Domain.csproj.AssemblyReference.cache
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/obj/Debug/net6.0/Domain.AssemblyInfoInputs.cache
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/obj/Debug/net6.0/Domain.csproj.CoreCompileInputs.cache
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/obj/Debug/net6.0/Domain.dll
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/obj/Debug/net6.0/refint/Domain.dll
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/obj/Debug/net6.0/Domain.pdb
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/obj/Debug/net6.0/ref/Domain.dll

@@ -1,0 +1,17 @@
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/bin/Debug/net6.0/Infrastructure.deps.json
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/bin/Debug/net6.0/Infrastructure.dll
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/bin/Debug/net6.0/Infrastructure.pdb
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/bin/Debug/net6.0/Application.dll
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/bin/Debug/net6.0/Domain.dll
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/bin/Debug/net6.0/Application.pdb
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/bin/Debug/net6.0/Domain.pdb
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.AssemblyReference.cache
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/obj/Debug/net6.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/obj/Debug/net6.0/Infrastructure.AssemblyInfoInputs.cache
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/obj/Debug/net6.0/Infrastructure.AssemblyInfo.cs
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.CoreCompileInputs.cache
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.CopyComplete
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/obj/Debug/net6.0/Infrastructure.dll
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/obj/Debug/net6.0/refint/Infrastructure.dll
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/obj/Debug/net6.0/Infrastructure.pdb
+/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Infrastructure/obj/Debug/net6.0/ref/Infrastructure.dll

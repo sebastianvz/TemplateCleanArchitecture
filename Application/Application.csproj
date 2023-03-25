@@ -9,10 +9,12 @@
   <ItemGroup>
     <None Remove="Use Cases\" />
     <None Remove="Use Cases\Car\" />
+    <None Remove="Contracts\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Use Cases\" />
     <Folder Include="Use Cases\Car\" />
+    <Folder Include="Contracts\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
