@@ -1,5 +1,5 @@
 ﻿using System;
-using Infrastructure.DataBase.Entities;
+using Infrastructure.EntityModeles;
 
 namespace Infrastructure.DataBase.Interfaz
 {
@@ -15,7 +15,7 @@ namespace Infrastructure.DataBase.Interfaz
 
         public Car GetById(int carID);
 
-        public void Dispose(int carID);
+        public void Dispose();
     }
 }
 

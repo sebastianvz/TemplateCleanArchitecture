@@ -9,18 +9,30 @@
   <ItemGroup>
     <None Remove="Mail\" />
     <None Remove="DataBase\" />
-    <None Remove="DataBase\Entities\" />
     <None Remove="DataBase\Repositorys\" />
     <None Remove="DataBase\Interfaz\" />
+    <None Remove="DataBase\EntityModeles\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Mail\" />
     <Folder Include="DataBase\" />
-    <Folder Include="DataBase\Entities\" />
     <Folder Include="DataBase\Repositorys\" />
     <Folder Include="DataBase\Interfaz\" />
+    <Folder Include="DataBase\EntityModeles\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>
