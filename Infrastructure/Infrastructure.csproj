@@ -8,9 +8,17 @@
 
   <ItemGroup>
     <None Remove="Mail\" />
+    <None Remove="DataBase\" />
+    <None Remove="DataBase\Entities\" />
+    <None Remove="DataBase\Repositorys\" />
+    <None Remove="DataBase\Interfaz\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Mail\" />
+    <Folder Include="DataBase\" />
+    <Folder Include="DataBase\Entities\" />
+    <Folder Include="DataBase\Repositorys\" />
+    <Folder Include="DataBase\Interfaz\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
