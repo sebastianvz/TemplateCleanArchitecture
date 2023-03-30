@@ -14,41 +14,13 @@ namespace Infrastructure.DataBase.Repositorys
         {
             _context = context;
         }
-        public void CreateCar(Car car)
-        {
-            _context.Add(car);
-        }
 
-        public void UpdateCar(Car car)
+        public Car findbyYead(int? year)
         {
-            _context.Entry(car).State = EntityState.Modified;
-        }
+            return _context.Cars.Where(c => c.Year == year).FirstOrDefault();
 
-        public void DeleteCar(int carID)
-        {
-            Car car = _context.Cars.Find(carID);
-            _context.Cars.Remove(car);
         }
-
-        public IEnumerable<Car> GetAll()
-        {
-            return _context.Cars.ToList();
-        }
-
-        public Car GetById(int carID)
-        {
-            return _context.Cars.Find(carID);
-        }
-
-        public void Dispose()
-        {
-            _context.Dispose();
-        }
-
-        public void Save()
-        {
-            _context.SaveChanges();
-        }
+        
     }
 }
 

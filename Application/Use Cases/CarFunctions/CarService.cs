@@ -17,17 +17,17 @@ namespace Application.UseCases.CarFunctions
 
         public void CreateCar(Car car)
         {
-            _carRepository.CreateCar(car);
+            _carRepository.Insert(car);
         }
 
         public void UpdateCar(Car car)
         {
-            _carRepository.UpdateCar(car);
+            _carRepository.Update(car);
         }
 
         public void DeleteCar(Car car)
         {
-            _carRepository.DeleteCar(car.IdCar);
+            _carRepository.Delete(car.IdCar);
         }
     }
 }

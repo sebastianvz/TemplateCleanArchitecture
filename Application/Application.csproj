@@ -8,15 +8,11 @@
 
   <ItemGroup>
     <None Remove="Use Cases\" />
-    <None Remove="Use Cases\Car\" />
     <None Remove="Contracts\" />
-    <None Remove="DTO\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Use Cases\" />
-    <Folder Include="Use Cases\Car\" />
     <Folder Include="Contracts\" />
-    <Folder Include="DTO\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
