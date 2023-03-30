@@ -3,7 +3,7 @@ using Domain.Entities;
 
 namespace Application.Contracts
 {
-	public interface ICarRepository 
+	public interface ICarRepository : IBaseRepository<Car>
 	{
         Car findbyYead(int? year);
     }

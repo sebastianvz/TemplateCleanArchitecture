@@ -29,6 +29,12 @@ namespace Application.UseCases.CarFunctions
         {
             _carRepository.Delete(car.IdCar);
         }
+
+        public Car CarbyYear(int? year){
+
+            return _carRepository.findbyYead(year);
+        }
+
     }
 }
 

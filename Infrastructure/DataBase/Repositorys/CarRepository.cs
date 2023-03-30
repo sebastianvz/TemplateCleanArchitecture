@@ -6,11 +6,11 @@ using Infrastructure.EntityModeles;
 
 namespace Infrastructure.DataBase.Repositorys
 { 
-    public class CarRepository : ICarRepository
+    public class CarRepository : BaseRespository<Car> , ICarRepository
     {
         private readonly TestUpbContext _context;
 
-        public CarRepository(TestUpbContext context)
+        public CarRepository(TestUpbContext context):base(context)
         {
             _context = context;
         }
