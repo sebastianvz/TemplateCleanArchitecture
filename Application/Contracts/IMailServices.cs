@@ -1,8 +1,8 @@
 ﻿using System;
 namespace Application.Contracts
 {
-	public interface IMail
-	{
+	public interface IMailServices
+    {
         public void sendMail(object mail);
     }
 }

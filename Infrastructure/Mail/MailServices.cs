@@ -4,7 +4,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Infrastructure.Mail
 {
-	public class Mail : IMail
+	public class MailServices : IMailServices
     {
 
         public void sendMail(object mail)

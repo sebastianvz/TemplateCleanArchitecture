@@ -10,15 +10,15 @@
     <None Remove="Mail\" />
     <None Remove="DataBase\" />
     <None Remove="DataBase\Repositorys\" />
-    <None Remove="DataBase\Interfaz\" />
     <None Remove="DataBase\EntityModeles\" />
+    <None Remove="DTO-DAT\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Mail\" />
     <Folder Include="DataBase\" />
     <Folder Include="DataBase\Repositorys\" />
-    <Folder Include="DataBase\Interfaz\" />
     <Folder Include="DataBase\EntityModeles\" />
+    <Folder Include="DTO-DAT\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />

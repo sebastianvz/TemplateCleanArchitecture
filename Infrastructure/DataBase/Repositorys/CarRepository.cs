@@ -1,7 +1,8 @@
 ﻿using System;
-using Infrastructure.DataBase.Interfaz;
-using Infrastructure.EntityModeles;
 using Microsoft.EntityFrameworkCore;
+using Application.Contracts;
+using Domain.Entities;
+using Infrastructure.EntityModeles;
 
 namespace Infrastructure.DataBase.Repositorys
 { 
@@ -48,9 +49,6 @@ namespace Infrastructure.DataBase.Repositorys
         {
             _context.SaveChanges();
         }
-
-
-
     }
 }
 

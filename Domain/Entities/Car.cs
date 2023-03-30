@@ -1,29 +1,20 @@
 ﻿using System;
-namespace Domain.Entities
+using System.Collections.Generic;
+
+namespace Domain.Entities;
+
+public partial class Car 
 {
-	public class Car
-	{
-        public string name { get; set; }
-        public int year { get; set; }
-        public string model { get; set; }
-        public float price { get; set; }
-        public string brand { get; set; }
+    public int IdCar { get; set; }
 
-        public void StarEngine()
-        {
+    public string? Name { get; set; }
 
-            Console.WriteLine("starting car engine ...");
-        }
+    public int? Year { get; set; }
 
-        public void StopEngine()
-        {
-            Console.WriteLine("stopiong car engine ...");
-        }
+    public string? Model { get; set; }
 
-        public void Break()
-        {
-            Console.WriteLine("breaking car...");
-        }
-    }
+    public float? Price { get; set; }
+
+    public string? Brand { get; set; }
+
 }
-

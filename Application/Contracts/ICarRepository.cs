@@ -1,7 +1,7 @@
 ﻿using System;
-using Infrastructure.EntityModeles;
+using Domain.Entities;
 
-namespace Infrastructure.DataBase.Interfaz
+namespace Application.Contracts
 {
 	public interface ICarRepository 
 	{
