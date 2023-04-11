@@ -8,24 +8,31 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/Users/sebastian/.nuget/packages/": {}
+    "C:\\Users\\Jhonatan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Jhonatan\\Source\\Repos\\TemplateCleanArchitecture\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/Domain.csproj",
-      "packagesPath": "/Users/sebastian/.nuget/packages/",
-      "outputPath": "/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Domain/obj/",
+      "projectPath": "C:\\Users\\Jhonatan\\Source\\Repos\\TemplateCleanArchitecture\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\Jhonatan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jhonatan\\Source\\Repos\\TemplateCleanArchitecture\\Domain\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/sebastian/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Jhonatan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
