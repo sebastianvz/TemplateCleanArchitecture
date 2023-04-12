@@ -7,7 +7,7 @@ namespace Infrastructure.Mail
 	public class MailServices : IMailServices
     {
 
-        public void sendMail(object mail)
+        public void SendMail(object mail)
         {
             Console.WriteLine("sending mail ...");
         }

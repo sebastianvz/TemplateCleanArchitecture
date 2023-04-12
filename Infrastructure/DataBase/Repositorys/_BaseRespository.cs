@@ -1,80 +1,85 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using Infrastructure.EntityModeles;
 using Application.Contracts;
+using Infrastructure.DataBase.EntityModeles;
 
 namespace Infrastructure.DataBase.Repositorys
 {
-	public class BaseRespository<TEntity>: IBaseRepository<TEntity> where TEntity : class 
+    public class BaseRespository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
-            internal TestUpbContext context;
-            internal DbSet<TEntity> dbSet;
+        internal TestUpbContext context;
+        internal DbSet<TEntity> dbSet;
 
-            public BaseRespository(TestUpbContext context)
+        public BaseRespository(TestUpbContext context)
+        {
+            this.context = context;
+            this.dbSet = context.Set<TEntity>();
+        }
+
+        public virtual IEnumerable<TEntity> Get(
+            Expression<Func<TEntity, bool>> filter = null,
+            Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
+            string includeProperties = "")
+        {
+            IQueryable<TEntity> query = dbSet;
+
+            if (filter != null)
             {
-                this.context = context;
-                this.dbSet = context.Set<TEntity>();
+                query = query.Where(filter);
             }
 
-            public virtual IEnumerable<TEntity> Get(
-                Expression<Func<TEntity, bool>> filter = null,
-                Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
-                string includeProperties = "")
+            foreach (var includeProperty in includeProperties.Split
+                (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
             {
-                IQueryable<TEntity> query = dbSet;
-
-                if (filter != null)
-                {
-                    query = query.Where(filter);
-                }
-
-                foreach (var includeProperty in includeProperties.Split
-                    (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
-                {
-                    query = query.Include(includeProperty);
-                }
-
-                if (orderBy != null)
-                {
-                    return orderBy(query).ToList();
-                }
-                else
-                {
-                    return query.ToList();
-                }
+                query = query.Include(includeProperty);
             }
 
-            public virtual TEntity GetByID(object id)
+            if (orderBy != null)
             {
-                return dbSet.Find(id);
+                return orderBy(query).ToList();
             }
-
-            public virtual void Insert(TEntity entity)
+            else
             {
-                dbSet.Add(entity);
-            }
-
-            public virtual void Delete(object id)
-            {
-                TEntity entityToDelete = dbSet.Find(id);
-                Delete(entityToDelete);
-            }
-
-            public virtual void Delete(TEntity entityToDelete)
-            {
-                if (context.Entry(entityToDelete).State == EntityState.Detached)
-                {
-                    dbSet.Attach(entityToDelete);
-                }
-                dbSet.Remove(entityToDelete);
-            }
-
-            public virtual void Update(TEntity entityToUpdate)
-            {
-                dbSet.Attach(entityToUpdate);
-                context.Entry(entityToUpdate).State = EntityState.Modified;
+                return query.ToList();
             }
         }
+
+        public virtual TEntity GetByID(object id)
+        {
+            return dbSet.Find(id);
+        }
+
+        public virtual void Insert(TEntity entity)
+        {
+            dbSet.Add(entity);
+        }
+
+        public virtual void Delete(object id)
+        {
+            TEntity entityToDelete = dbSet.Find(id);
+            Delete(entityToDelete);
+        }
+
+        public virtual void Delete(TEntity entityToDelete)
+        {
+            if (context.Entry(entityToDelete).State == EntityState.Detached)
+            {
+                dbSet.Attach(entityToDelete);
+            }
+            dbSet.Remove(entityToDelete);
+        }
+
+        public virtual void Update(TEntity entityToUpdate)
+        {
+            dbSet.Attach(entityToUpdate);
+            context.Entry(entityToUpdate).State = EntityState.Modified;
+        }
+
+        public int SaveChanges()
+        {
+            return context.SaveChanges();
+        }
+    }
 }
 

@@ -18,11 +18,17 @@ namespace Application.UseCases.CarFunctions
         public void CreateCar(Car car)
         {
             _carRepository.Insert(car);
+            var result = _carRepository.SaveChanges();
+            if (result <= 0)
+            {
+                throw new Exception("No fue posible guardar los cambios");
+            }
         }
 
         public void UpdateCar(Car car)
         {
             _carRepository.Update(car);
+            _carRepository.SaveChanges();
         }
 
         public void DeleteCar(Car car)
@@ -32,7 +38,7 @@ namespace Application.UseCases.CarFunctions
 
         public Car CarbyYear(int? year){
 
-            return _carRepository.findbyYead(year);
+            return _carRepository.FindbyYead(year);
         }
 
     }

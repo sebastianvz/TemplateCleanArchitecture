@@ -5,7 +5,7 @@ namespace Application.Contracts
 {
 	public interface ICarRepository : IBaseRepository<Car>
 	{
-        Car findbyYead(int? year);
+        Car FindbyYead(int? year);
     }
 }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KCbSdw76JFxFLfaXSoadlp8o73Vaz3s2GPlufV4mTz8ks18YZweWWvG1rmk9C9Qus3z/lwvUgUD+Mcju+WBw+g==",
+  "dgSpecHash": "S0qH2KPhddkxI5L1aIBKDW+mqk/SFqbF8Lgss4kx4ldXTbmtBxLRiBn03sFBGsBysMh4jKEszDaxXYsSoMSBFg==",
   "success": true,
-  "projectFilePath": "/Users/sebastian/Documents/My drive/Sebastian/Projects/TemplateCleanArchitecture/Application/Application.csproj",
+  "projectFilePath": "C:\\Users\\Jhonatan\\Source\\Repos\\TemplateCleanArchitecture\\Application\\Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
