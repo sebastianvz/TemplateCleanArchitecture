@@ -18,16 +18,19 @@ namespace Application.UseCases.CarFunctions
         public void CreateCar(Car car)
         {
             _carRepository.Insert(car);
+            _carRepository.SaveChanges();
         }
 
-        public void UpdateCar(Car car)
+        public void UpdateCar(Car car) 
         {
             _carRepository.Update(car);
+            _carRepository.SaveChanges();
         }
 
         public void DeleteCar(Car car)
         {
             _carRepository.Delete(car.IdCar);
+            _carRepository.SaveChanges();
         }
 
         public Car CarbyYear(int? year){

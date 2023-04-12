@@ -1,39 +1,23 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/DataBase/Repositorys/CarRepository.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Application/Use Cases/CarFunctions/CarService.cs">
     <Files>
-      <File FileName="Application/Contracts/ICarRepository.cs" Line="6" Column="34" />
-      <File FileName="Infrastructure/DataBase/Repositorys/CarRepository.cs" Line="16" Column="39" />
+      <File FileName="Infrastructure/DataBase/Repositorys/CarRepository.cs" Line="22" Column="10" />
+      <File FileName="Infrastructure/DataBase/Repositorys/_BaseRespository.cs" Line="8" Column="2" />
+      <File FileName="Infrastructure/InfrastructureServiceRegistration.cs" Line="21" Column="1" />
+      <File FileName="Application/Contracts/ICarRepository.cs" Line="3" Column="1" />
+      <File FileName="Application/Use Cases/CarFunctions/CarService.cs" Line="41" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TemplateCleanArchitecture" expanded="True">
-            <Node name="Application" expanded="True">
-              <Node name="Contracts" expanded="True" />
-              <Node name="Use Cases" expanded="True" />
-            </Node>
-            <Node name="Domain" expanded="True">
-              <Node name="Entities" expanded="True" />
-            </Node>
-            <Node name="Infrastructure" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="DataBase" expanded="True">
-                <Node name="EntityModeles" expanded="True" />
-                <Node name="Repositorys" expanded="True">
-                  <Node name="CarRepository.cs" selected="True" />
-                </Node>
-              </Node>
-              <Node name="Mail" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="TemplateCleanArchitecture" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.TemplateCleanArchitectureTest FirstBuild="True" />
 </Properties>
