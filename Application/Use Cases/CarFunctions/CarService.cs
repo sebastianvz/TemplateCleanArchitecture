@@ -15,10 +15,12 @@ namespace Application.UseCases.CarFunctions
             _carRepository = carRepository;
         }
 
-        public void CreateCar(Car car)
+        public int CreateCar(Car car)
         {
             _carRepository.Insert(car);
             _carRepository.SaveChanges();
+
+            return 1;
         }
 
         public void UpdateCar(Car car) 

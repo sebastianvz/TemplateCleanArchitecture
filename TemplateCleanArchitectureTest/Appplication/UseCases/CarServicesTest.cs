@@ -20,7 +20,7 @@ namespace TemplateCleanArchitectureTest.Appplication.UseCases
 				Name = "RS"
 			};
 
-
+			
 			var carRepository = new Mock<ICarRepository>();
 			var carService = new CarService(carRepository.Object);
 
@@ -28,8 +28,9 @@ namespace TemplateCleanArchitectureTest.Appplication.UseCases
 			carService.CreateCar(car);
 
 			carRepository.Verify(x => x.Insert(car), Times.Once);
+            carRepository.Verify(x => x.SaveChanges(), Times.Once);
 
-		}
+        }
 
 	}
 }
